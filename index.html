@@ -23,6 +23,7 @@
     <div name="formpart">
         <label for="phone">phone number</label>
         <input id="phone" type="tel" placeholder="Enter your phone number"
+        pattern="[0-9]{12}"
         minlength="6"
         maxlength="12"
         required
@@ -30,13 +31,27 @@
     </div><br><br><div name="formpart">
                 <label id="like" for="dropdown">what you most like in web dev ?</label>
                 <select id="dropdown" name="like">
-                  <!-- <option value="" disabled selected>Select an option</option> -->
                   <option value="css">css</option>
                   <option value="SASS">SASS</option>
                   <option value="JS">JS</option>
                   <option value="React">React</option>
                   <option value="Node">Node</option>
                 </select></div><br><br>
+                <div name="formpart">
+                <p>Do you like fish ?</p>
+  
+        <label for="yes"> Yes</label><input name="fishanswer" id="yes" type="radio" value="yes">
+        <label for="no"> No</label><input name="fishanswer" id="no" type="radio"  value="no">
+        <label for="IDK">IDK</label><input name="fishanswer" id="IDK" type="radio"  value="idk" checked>
+      </div>
+      <div name="formpart">       
+            <p>WHat are your hobbies</p>
+            
+              <label> fishing the north sea</label><input type="checkbox" value="fishins">
+              <label> Cycling in the weekend</label><input type="checkbox" value="cycling">
+              <label> Surfing</label><input type="checkbox" value="surfing">
+              <label>watching movies</label><input type="checkbox" value="movies"> 
+            </div>
                 <div name="formpart"> 
         <textarea name="textarea" id="" cols="30" rows="10"></textarea></div><br><br>
         <button id="submit"type="submit" >submit</button>
