@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,EAAE,CAAA;EACE,WAAW,EAAE,MAAM;CACtB",
+    "sources": [
+        "syle.scss"
+    ],
+    "names": [],
+    "file": "syle.css"
+}
