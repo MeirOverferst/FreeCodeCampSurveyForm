@@ -10,11 +10,36 @@
 <body>
     <h1 id="title">hallo</h1>
     <p id="desc">This survey is about bla bla bla bla and bit of bla...</p>
-    <form id="survey-form">
+    <form id="survey-form"  >
+        <div name="formpart">
         <label for="Name">Name</label>
-        <input id="Name" type="text"><br><br>
+        <input id="Name" type="text" placeholder="Enter your name" required>
+    </div>
+        <br><br>
+        <div name="formpart">
         <label for="E-mail">E-mail</label>
-        <input id="E-mail" type="email">
+        <input id="E-mail" type="email" placeholder="Enter your email" required><br><br>
+    </div>
+    <div name="formpart">
+        <label for="phone">phone number</label>
+        <input id="phone" type="tel" placeholder="Enter your phone number"
+        minlength="6"
+        maxlength="12"
+        required
+        >
+    </div><br><br><div name="formpart">
+                <label id="like" for="dropdown">what you most like in web dev ?</label>
+                <select id="dropdown" name="like">
+                  <!-- <option value="" disabled selected>Select an option</option> -->
+                  <option value="css">css</option>
+                  <option value="SASS">SASS</option>
+                  <option value="JS">JS</option>
+                  <option value="React">React</option>
+                  <option value="Node">Node</option>
+                </select></div><br><br>
+                <div name="formpart"> 
+        <textarea name="textarea" id="" cols="30" rows="10"></textarea></div><br><br>
+        <button id="submit"type="submit" >submit</button>
     </form>
     <script src="/script.js"></script>
 </body>
